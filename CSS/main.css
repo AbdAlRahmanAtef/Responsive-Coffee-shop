@@ -746,11 +746,11 @@ footer .icon {
 }
 footer .icon i {
   display: inline-flex;
-  font-size: 22px;
+  font-size: 20px;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border: var(--border);
   cursor: pointer;
   border-radius: 50%;
