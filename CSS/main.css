@@ -158,6 +158,7 @@ a {
 }
 .main-link {
   line-height: 1.7;
+  max-height: 40px;
   width: fit-content;
   padding: 2px 16px;
   background-color: var(--main-color-alt);
