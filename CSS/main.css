@@ -173,6 +173,13 @@ a {
   background-color: white;
   color: var(--main-color-alt);
 }
+@media (max-width: 767px) {
+  .main-link {
+    padding: 2px 8px;
+    font-weight: normal;
+    font-size: 20px;
+  }
+}
 /* End Global Conmponent */
 /* Start Header */
 header {
@@ -216,6 +223,11 @@ header .container ul {
 @media (max-width: 767px) {
   header .container ul {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  header .list .bar {
+    order: 4;
   }
 }
 @media (max-width: 767px) {
