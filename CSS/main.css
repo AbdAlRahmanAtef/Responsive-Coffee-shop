@@ -53,6 +53,7 @@ a {
   }
 }
 .main-heading {
+  line-height: 1.2;
   margin: 0 auto 60px auto;
   padding: 0 20px;
   width: fit-content;
@@ -157,6 +158,7 @@ a {
 }
 }
 .main-link {
+  line-height: 1.7;
   width: fit-content;
   padding: 2px 16px;
   background-color: var(--main-color-alt);
@@ -465,6 +467,7 @@ header .icons .mega ul li i:hover {
 }
 .menu .box a {
   display: block;
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 /* End Menu */
@@ -743,6 +746,10 @@ footer p {
   font-size: 22px;
   word-spacing: 3px;
   margin-bottom: 20px;
+}
+footer p span {
+  color: red;
+  font-size: 30px;
 }
 footer p a {
   color: #ccc;
