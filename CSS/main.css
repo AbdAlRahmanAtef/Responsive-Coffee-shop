@@ -5,13 +5,14 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  --main-padding: 60px
 }
 :root {
   --main-color: #13131a;
   --main-color-alt: #d3ad7f;
+  --section-color: #eee;
   --border: .1rem solid rgba(255,255,255,.3);
   --main-transition: .3s;
+  --main-padding: 60px
 }
 body {
   font-family: 'Cairo', sans-serif;
@@ -157,10 +158,12 @@ a {
 }
 }
 .main-link {
-  line-height: 1.7;
-  max-height: 40px;
   width: fit-content;
-  padding: 2px 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0 15px;
   background-color: var(--main-color-alt);
   font-weight: bold;
   font-size: 18px;
@@ -174,13 +177,6 @@ a {
   border: 2px solid var(--main-color-alt);
   background-color: white;
   color: var(--main-color-alt);
-}
-@media (max-width: 767px) {
-  .main-link {
-    padding: 2px 8px;
-    font-weight: normal;
-    font-size: 20px;
-  }
 }
 /* End Global Conmponent */
 /* Start Header */
@@ -467,7 +463,6 @@ header .icons .mega ul li i:hover {
 }
 .menu .box a {
   display: block;
-  margin-top: 10px;
   margin-bottom: 30px;
 }
 /* End Menu */
@@ -726,7 +721,7 @@ footer ul {
   }
 }
 footer ul li {
-  padding: 5px 15px;
+  padding: 0 15px;
   border: var(--border);
   border-radius: 6px;
   transition: var(--main-transition);
@@ -749,7 +744,7 @@ footer p {
 }
 footer p span {
   color: red;
-  font-size: 30px;
+  font-size: 27px;
 }
 footer p a {
   color: #ccc;
@@ -796,3 +791,18 @@ footer .icon i:last-of-type:hover {
   border-color: transparent;
 }
 /* End Footer */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--main-color);
+  box-shadow: 0 0 10px rgb(21, 2, 2) inset;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 5px;
+  transition: var(--main-transition);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(221, 221, 221, 0.644);
+}
