@@ -18,3 +18,20 @@ window.onscroll = () => {
   menu.classList.remove("active");
   megaMenu.classList.remove("active");
 };
+document.onkeyup = (e) => {
+  if (e.key === "Escape") {
+    menu.classList.remove("active");
+    megaMenu.classList.remove("active");
+  }
+};
+let scrollUp = document.querySelector(".scroll-up i");
+window.onscroll = () => {
+  if (window.scrollY >= 620) {
+    scrollUp.style.display = "flex";
+  } else {
+    scrollUp.style.display = "none";
+  }
+};
+scrollUp.onclick = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
