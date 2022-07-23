@@ -239,7 +239,7 @@ header .container ul {
     width: 300px;
     transform: translateX(100%);
     background-color: white;
-    transition: .3s;
+    transition: 0.3s;
     height: calc(100vh - 90px);
   }
   header .list > ul li {
@@ -293,7 +293,7 @@ header .mega ul {
   width: 400px;
   background-color: white;
   height: calc(100vh - 90px);
-  transition: .3s;
+  transition: 0.3s;
   transform: translateX(100%);
 }
 header .mega ul.active {
