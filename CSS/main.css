@@ -10,12 +10,12 @@
   --main-color: #13131a;
   --main-color-alt: #d3ad7f;
   --section-color: #eee;
-  --border: .1rem solid rgba(255,255,255,.3);
-  --main-transition: .3s;
-  --main-padding: 60px
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  --main-transition: 0.3s;
+  --main-padding: 60px;
 }
 body {
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
   color: white;
   background-color: black;
 }
@@ -76,7 +76,7 @@ a {
 }
 .main-heading span {
   color: var(--main-color-alt);
-  transition: var(--main-transition)
+  transition: var(--main-transition);
 }
 .main-heading:hover {
   color: black;
@@ -102,7 +102,7 @@ a {
   left: -40px;
 }
 .main-heading:hover::before {
-  animation: to-right .5s ease-in-out forwards;
+  animation: to-right 0.5s ease-in-out forwards;
 }
 @keyframes to-right {
   0% {
@@ -130,7 +130,7 @@ a {
   right: -40px;
 }
 .main-heading:hover:after {
-  animation: to-left .5s ease-in-out forwards;
+  animation: to-left 0.5s ease-in-out forwards;
 }
 @keyframes to-left {
   0% {
@@ -153,9 +153,9 @@ a {
 }
 @media (max-width: 767px) {
   .main-heading::before,
-.main-heading::after {
-  display: none;
-}
+  .main-heading::after {
+    display: none;
+  }
 }
 .main-link {
   width: fit-content;
@@ -172,7 +172,7 @@ a {
   text-align: center;
   margin: 0 auto;
   border: 2px solid transparent;
-} 
+}
 .main-link:hover {
   border: 2px solid var(--main-color-alt);
   background-color: white;
@@ -229,16 +229,18 @@ header .container ul {
   }
 }
 @media (max-width: 767px) {
-  header .list .bar:hover + ul {
+  header .list ul {
     display: flex;
     flex-direction: column;
     padding: 20px;
     position: absolute;
-    top: calc(100% + 6px);
-    right: 0;
-    width: 200px;
+    top: calc(100% + 5px);
+    right: -100px;
+    width: 300px;
+    transform: translateX(100%);
     background-color: white;
-    max-height: 500px;
+    transition: .3s;
+    height: calc(100vh - 90px);
   }
   header .list > ul li {
     margin-bottom: 10px;
@@ -247,6 +249,12 @@ header .container ul {
     color: black;
     width: 100%;
   }
+  .list ul.active {
+    transform: translateX(0);
+  }
+}
+.list ul .active {
+  transform: translateX(0);
 }
 header .container ul li {
   padding: 10px;
@@ -275,22 +283,25 @@ header .icon:hover i {
   color: var(--main-color-alt);
 }
 header .mega ul {
-  display: none;
-}
-header .mega i:hover + ul {
   position: absolute;
   display: flex;
-  padding: 10px;
+  align-items: flex-start;
+  padding: 10px 0px 10px 10px;
   flex-direction: column;
   top: calc(100% + 6px);
-  right: 0;
-  width: 350px;
+  right: -100px;
+  width: 400px;
   background-color: white;
-  height: calc(100vh - 95px);
-  z-index: 3;
+  height: calc(100vh - 90px);
+  transition: .3s;
+  transform: translateX(100%);
+}
+header .mega ul.active {
+  transform: translateX(0);
 }
 header .mega li {
   display: flex;
+  width: 300px;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
@@ -303,7 +314,7 @@ header .mega img {
   max-width: 100%;
 }
 header .mega .text p {
-  color:black;
+  color: black;
   font-size: 18px;
   font-weight: bold;
 }
@@ -412,7 +423,7 @@ header .icons .mega ul li i:hover {
 }
 .menu .box {
   text-align: center;
-  padding: 20px ;
+  padding: 20px;
   border: var(--border);
   transition: var(--main-transition);
 }
@@ -448,7 +459,7 @@ header .icons .mega ul li i:hover {
 }
 .menu .box:hover span {
   color: #333;
-} 
+}
 .menu .box span:last-of-type::before {
   content: "";
   width: calc(100% + 3px);
@@ -479,7 +490,7 @@ header .icons .mega ul li i:hover {
 }
 .products .box {
   text-align: center;
-  padding: 20px ;
+  padding: 20px;
   border: var(--border);
   transition: var(--main-transition);
 }
@@ -552,7 +563,7 @@ header .icons .mega ul li i:hover {
 }
 .review .box {
   text-align: center;
-  padding: 20px ;
+  padding: 20px;
   border: var(--border);
 }
 .review img {
@@ -717,7 +728,7 @@ footer ul {
     padding-bottom: 20px;
   }
   footer ul {
-    display: none; 
+    display: none;
   }
 }
 footer ul li {
