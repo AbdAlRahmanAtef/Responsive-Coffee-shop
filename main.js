@@ -13,10 +13,10 @@ toggler.onclick = () => {
 megaIcon.onclick = function () {
   megaMenu.classList.toggle("active");
   menu.classList.remove("active");
-};
-window.onscroll = () => {
-  menu.classList.remove("active");
-  megaMenu.classList.remove("active");
+  window.onscroll = () => {
+    menu.classList.remove("active");
+    megaMenu.classList.remove("active");
+  };
 };
 document.onkeyup = (e) => {
   if (e.key === "Escape") {
