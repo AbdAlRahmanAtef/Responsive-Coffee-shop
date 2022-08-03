@@ -304,11 +304,6 @@ header .mega-menu {
   transition: 0.3s;
   transform: translateX(100%);
 }
-.empty {
-  font-size: 30px;
-  text-align: center;
-  padding: 10px;
-}
 header .mega-menu.active {
   transform: translateX(0);
 }
@@ -526,7 +521,6 @@ header .icons .mega-menu button:hover {
   background-color: #fff;
   border-color: var(--main-color-alt);
   color: var(--main-color-alt);
-
 }
 /* End Menu */
 /* Start Products */

@@ -139,10 +139,6 @@ function createElements(e) {
   box.append(close);
   megaMenu.prepend(box);
 
-}
-
-// Remove Item
-function remveItem() {
   close.addEventListener("click", (e) => {
     imgArry = imgArry.filter(
       (ele) =>
