@@ -36,10 +36,14 @@
           </ul>
           <div class="icons">
             <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-            <div class="icon mega">
+            <div class="icon cart-icon" data-total="0">
               <i class="fa-solid fa-cart-shopping"></i>
-              <div class="mega-menu">
-                <button>Checkout Now</button>
+              <div class="cart">
+                <div class="content"></div>
+                <div class="checkout">
+                  <p>You have (<span>0</span>) items</p>
+                  <button>Checkout Now</button>
+                </div>
               </div>
             </div>
           </div>
@@ -47,6 +51,8 @@
       </div>
     </header>
     <!-- End Header -->
+
+    <!-- Start Landing Page -->
     <div class="landing">
       <div class="container">
         <div class="text">
@@ -83,126 +89,19 @@
         </div>
       </div>
     </div>
+    <!-- End Landing Page -->
+
     <!-- Start Menu -->
     <div class="menu" id="menu">
       <h2 class="main-heading">Our <span>Menu</span></h2>
-      <div class="container">
-        <div class="box">
-          <img src="images/menu-1.png" alt="" />
-          <p>Tasty And Healty</p>
-          <span>$15.99</span>
-          <span class="offer">20.99</span>
-          <button>Add To Cart</button>
-        </div>
-        <div class="box">
-          <img src="images/menu-2.png" alt="" />
-          <p>Tasty And Healty</p>
-          <span>$15.99</span>
-          <span class="offer">20.99</span>
-          <button>Add To Cart</button>
-        </div>
-        <div class="box">
-          <img src="images/menu-3.png" alt="" />
-          <p>Tasty And Healty</p>
-          <span>$15.99</span>
-          <span class="offer">20.99</span>
-          <button>Add To Cart</button>
-        </div>
-        <div class="box">
-          <img src="images/menu-4.png" alt="" />
-          <p>Tasty And Healty</p>
-          <span>$15.99</span>
-          <span class="offer">20.99</span>
-          <button>Add To Cart</button>
-        </div>
-        <div class="box">
-          <img src="images/menu-5.png" alt="" />
-          <p>Tasty And Healty</p>
-          <span>$15.99</span>
-          <span class="offer">20.99</span>
-          <button>Add To Cart</button>
-        </div>
-        <div class="box">
-          <img src="images/menu-6.png" alt="" />
-          <p>Tasty And Healty</p>
-          <span>$15.99</span>
-          <span class="offer">20.99</span>
-          <button>Add To Cart</button>
-        </div>
-      </div>
+      <div class="container"></div>
     </div>
     <!-- End Menu -->
+
     <!-- Start Products -->
     <div class="products" id="product">
       <h2 class="main-heading">Our <span>Products</span></h2>
-      <div class="container">
-        <div class="box">
-          <div class="icons">
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            <a href="#"><i class="fa-solid fa-heart"></i></a>
-            <a href="#"><i class="fa-solid fa-eye"></i></a>
-          </div>
-          <div class="imag">
-            <img src="images/product-1.png" alt="" />
-          </div>
-          <div class="info">
-            <h3>Fresh Coffee</h3>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star-half-stroke"></i>
-            </div>
-            <span>$15.99</span>
-            <span class="offer">$20.99</span>
-          </div>
-        </div>
-        <div class="box">
-          <div class="icons">
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            <a href="#"><i class="fa-solid fa-heart"></i></a>
-            <a href="#"><i class="fa-solid fa-eye"></i></a>
-          </div>
-          <div class="imag">
-            <img src="images/product-2.png" alt="" />
-          </div>
-          <div class="info">
-            <h3>Fresh Coffee</h3>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </div>
-            <span>$15.99</span>
-            <span class="offer">$20.99</span>
-          </div>
-        </div>
-        <div class="box">
-          <div class="icons">
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            <a href="#"><i class="fa-solid fa-heart"></i></a>
-            <a href="#"><i class="fa-solid fa-eye"></i></a>
-          </div>
-          <div class="imag">
-            <img src="images/product-1.png" alt="" />
-          </div>
-          <div class="info">
-            <h3>Fresh Coffee</h3>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star-half-stroke"></i>
-              <i class="fa-regular fa-star"></i>
-            </div>
-            <span>$15.99</span>
-            <span class="offer">$20.99</span>
-          </div>
-        </div>
-      </div>
+      <div class="container"></div>
     </div>
     <!-- End Products -->
     <!-- Start Review -->
@@ -314,7 +213,6 @@
           <div class="imag"><img src="images/blog-1.jpeg" alt="" /></div>
           <div class="info">
             <p>Tasty And Refreshing Coffee</p>
-            <p>By Admin / 21st May, 2021</p>
             <p>
               Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Non,
               Dicta.
@@ -326,7 +224,6 @@
           <div class="imag"><img src="images/blog-2.jpeg" alt="" /></div>
           <div class="info">
             <p>Tasty And Refreshing Coffee</p>
-            <p>By Admin / 21st May, 2021</p>
             <p>
               Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Non,
               Dicta.
@@ -338,7 +235,6 @@
           <div class="imag"><img src="images/blog-3.jpeg" alt="" /></div>
           <div class="info">
             <p>Tasty And Refreshing Coffee</p>
-            <p>By Admin / 21st May, 2021</p>
             <p>
               Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Non,
               Dicta.
@@ -352,18 +248,9 @@
     <!-- Start Footer -->
     <footer>
       <div class="container">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#product">Products</a></li>
-          <li><a href="#review">Review</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#blog">Blogs</a></li>
-        </ul>
         <p>
-          Made With <span>&#9829;</span> By
-          <a href="mailto:rabdalrahman57@gmail.com">Abdalrhman Atef</a>
+          Made With <span><i class="fa-solid fa-heart"></i></span> By
+          <a href="mailto:abdalrhman.atef.ramadan@gamil.com">Abdalrhman Atef</a>
         </p>
         <div class="icon">
           <i class="fa-brands fa-facebook-f"></i>
